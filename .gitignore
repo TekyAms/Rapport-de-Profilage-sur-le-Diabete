@@ -30,3 +30,7 @@ Thumbs.db
 # *.csv  - Inclure les fichiers CSV du projet
 *.xlsx
 *.xls
+
+# Generated reports (voluminous files)
+rapport_profiling_diabete.html
+*.html

@@ -27,6 +27,6 @@ build/
 Thumbs.db
 
 # Data
-*.csv
+# *.csv  - Inclure les fichiers CSV du projet
 *.xlsx
 *.xls

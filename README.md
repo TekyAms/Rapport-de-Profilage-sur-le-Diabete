@@ -66,11 +66,11 @@ Le notebook génère un rapport de profilage HTML interactif avec :
 - Détection des anomalies
 - Analyse de la qualité des données
 
-## � Aperçu du Rapport
+## 📸 Aperçu du Rapport
 
 Voici des captures d'écran du rapport de profilage généré :
 
-### Statisques Générales
+### Statistiques Générales
 ![Statistiques générales](images/stats_generales.png)
 
 ### Distribution des Variables
@@ -79,9 +79,7 @@ Voici des captures d'écran du rapport de profilage généré :
 ### Corrélations
 ![Corrélations](images/correlations.png)
 
-
-
-## �💡 Structure du Notebook
+## 💡 Structure du Notebook
 
 1. **Chargement des données** - Import du CSV et aperçu initial
 2. **Exploration descriptive** - Statistiques et structure

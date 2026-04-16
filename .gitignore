@@ -32,5 +32,9 @@ Thumbs.db
 *.xls
 
 # Generated reports (voluminous files)
-rapport_profiling_diabete.html
 *.html
+outputs/*.html
+outputs/*.json
+
+# Keep the outputs directory
+!outputs/.gitkeep

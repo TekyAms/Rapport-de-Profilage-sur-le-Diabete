@@ -1,20 +1,20 @@
 # Rapport de Profilage sur le Diabète 🏥
 
-Analyse complète et rapport de profilage sur les données de diabète. Ce projet combine une analyse exploratoire détaillée avec un rapport HTML interactif.
+Analyse complète et rapport de profilage sur les données de diabète. Ce projet combine une analyse exploratoire détaillée avec un rapport HTML interactif généré automatiquement.
 
 ## 📋 Contenu du Projet
 
 - **`Analyse_du_diabetes.ipynb`** - Notebook Jupyter contenant l'analyse exploratoire des données (EDA)
 - **`diabetes (1).csv`** - Dataset contenant les données brutes sur le diabète
-- **`rapport_profiling_diabete.html`** - Rapport HTML généré automatiquement avec visualisations et statistiques
+- **`outputs/`** - Dossier pour les rapports générés localement
 - **`.gitignore`** - Configuration pour ignorer les fichiers non essentiels
 
-## 🚀 Démarrage
+## 🚀 Démarrage Rapide
 
 ### Prérequis
 - Python 3.8+
 - Jupyter Notebook
-- Bibliothèques pandas, numpy, matplotlib, seaborn, ydata_profiling (ou pandas_profiling)
+- Bibliothèques : pandas, numpy, matplotlib, seaborn, ydata-profiling
 
 ### Installation
 
@@ -27,58 +27,75 @@ cd Rapport-de-Profilage-sur-le-Diabete
 pip install pandas numpy matplotlib seaborn jupyter ydata-profiling
 ```
 
-### Utilisation
+### Exécution
 
 ```bash
 # Lancer Jupyter Notebook
 jupyter notebook Analyse_du_diabetes.ipynb
 ```
 
-Ouvrez le fichier `rapport_profiling_diabete.html` dans votre navigateur pour voir le rapport complet.
+Exécutez les cellules du notebook pour générer le rapport interactif `rapport_profiling_diabete.html` dans le dossier `outputs/`, puis ouvrez-le dans votre navigateur.
 
-## 📊 Descriptions des Données
+## 📊 Données
 
-Le dataset contient des informations relatives au diabète incluant :
-- Mesures de santé (glucose, tension artérielle, IMC, etc.)
-- Autres indicateurs médicaux pertinents
-- Variables cibles pour la prédiction
+Le dataset contient **768 observations** avec les variables suivantes :
+- **Pregnancies** : Nombre de grossesses
+- **Glucose** : Concentration de glucose (mg/dL)
+- **BloodPressure** : Tension artérielle (mmHg)
+- **SkinThickness** : Épaisseur des plis cutanés (mm)
+- **Insulin** : Niveau d'insuline (µU/mL)
+- **BMI** : Indice de masse corporelle
+- **DiabetesPedigreeFunction** : Historique familial de diabète
+- **Age** : Âge en années
+- **Outcome** : Présence de diabète (0 ou 1)
 
 ## 🔍 Analyses Effectuées
 
-- Analyse statistique descriptive
-- Distribution des variables
-- Corrélations et relations entre variables
-- Détection des valeurs manquantes et aberrantes
-- Visualisations des patterns et tendances
+✓ Analyse statistique descriptive complète  
+✓ Distribution des variables et détection d'anomalies  
+✓ Corrélations et relations entre variables  
+✓ Identification des valeurs manquantes et aberrantes  
+✓ Visualisations des patterns et tendances  
 
 ## 📈 Résultats
 
-Consultez le rapport interactif `rapport_profiling_diabete.html` pour une visualisation complète des résultats et statistiques.
+Le notebook génère un rapport de profilage HTML interactif avec :
+- Statistiques détaillées par variable
+- Distributions et histogrammes
+- Matrice de corrélation
+- Détection des anomalies
+- Analyse de la qualité des données
 
-## 💡 Utilisation du Notebook
+## 💡 Structure du Notebook
 
-Le Jupyter Notebook `Analyse_du_diabetes.ipynb` contient :
-1. Chargement et exploration initiale des données
-2. Nettoyage et préparation des données
-3. Analyse statistique approfondie
-4. Génération du rapport de profilage
-5. Visualisations et insights
+1. **Chargement des données** - Import du CSV et aperçu initial
+2. **Exploration descriptive** - Statistiques et structure
+3. **Détection des anomalies** - Valeurs manquantes et zéros problématiques
+4. **Analyse statistique** - Statistiques détaillées par colonne
+5. **Génération du rapport** - Création automatique du fichier HTML
 
-## 🤝 Contribution
+## 🛠️ Technologies Utilisées
 
-Les contributions sont bienvenues! N'hésitez pas à :
-- Signaler des bugs
-- Proposer des améliorations
-- Soumettre des pull requests
+- **Pandas** - Manipulation et analyse des données
+- **NumPy** - Calculs numériques
+- **Matplotlib & Seaborn** - Visualisations
+- **YData Profiling** - Rapport de profilage automatique
+- **Jupyter Notebook** - Environnement interactif
 
-## 📝 Licence
+## 📝 Notes Importantes
+
+- Le fichier `rapport_profiling_diabete.html` est généré **localement** en exécutant le notebook dans le dossier `outputs/`
+- Les zéros dans certaines colonnes (Glucose, BloodPressure, etc.) représentent des valeurs manquantes ou non mesurées
+
+
+## 📄 Licence
 
 Ce projet est à usage libre.
 
 ## 👤 Auteur
 
-**TekyAms** - 2026
+**Tèkiyath AMOUSSA alias TekyAms** 
 
 ---
 
-**Note** : Pour plus d'informations, consultez le notebook Jupyter ou le rapport HTML interactif.
+**💬 Pour en savoir plus** : Consultez le notebook Jupyter pour une analyse détaillée ou exécutez-le pour générer le rapport HTML complet.

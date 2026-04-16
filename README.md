@@ -6,7 +6,7 @@ Analyse complète et rapport de profilage sur les données de diabète. Ce proje
 
 - **`Analyse_du_diabetes.ipynb`** - Notebook Jupyter contenant l'analyse exploratoire des données (EDA)
 - **`diabetes (1).csv`** - Dataset contenant les données brutes sur le diabète
-- **`outputs/`** - Dossier pour les rapports générés localement
+- **`images/`** - Captures d'écran du rapport de profilage
 - **`.gitignore`** - Configuration pour ignorer les fichiers non essentiels
 
 ## 🚀 Démarrage Rapide
@@ -34,7 +34,7 @@ pip install pandas numpy matplotlib seaborn jupyter ydata-profiling
 jupyter notebook Analyse_du_diabetes.ipynb
 ```
 
-Exécutez les cellules du notebook pour générer le rapport interactif `rapport_profiling_diabete.html` dans le dossier `outputs/`, puis ouvrez-le dans votre navigateur.
+Exécutez les cellules du notebook pour générer le rapport interactif `rapport_profiling_diabete.html`, puis ouvrez-le dans votre navigateur.
 
 ## 📊 Données
 
@@ -66,7 +66,22 @@ Le notebook génère un rapport de profilage HTML interactif avec :
 - Détection des anomalies
 - Analyse de la qualité des données
 
-## 💡 Structure du Notebook
+## � Aperçu du Rapport
+
+Voici des captures d'écran du rapport de profilage généré :
+
+### Statisques Générales
+![Statistiques générales](images/stats_generales.png)
+
+### Distribution des Variables
+![Distribution](images/distribution.png)
+
+### Corrélations
+![Corrélations](images/correlations.png)
+
+
+
+## �💡 Structure du Notebook
 
 1. **Chargement des données** - Import du CSV et aperçu initial
 2. **Exploration descriptive** - Statistiques et structure
@@ -84,7 +99,7 @@ Le notebook génère un rapport de profilage HTML interactif avec :
 
 ## 📝 Notes Importantes
 
-- Le fichier `rapport_profiling_diabete.html` est généré **localement** en exécutant le notebook dans le dossier `outputs/`
+- Le fichier `rapport_profiling_diabete.html` est généré **localement** en exécutant le notebook
 - Les zéros dans certaines colonnes (Glucose, BloodPressure, etc.) représentent des valeurs manquantes ou non mesurées
 
 

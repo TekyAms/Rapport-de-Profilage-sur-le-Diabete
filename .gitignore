@@ -33,8 +33,10 @@ Thumbs.db
 
 # Generated reports (voluminous files)
 *.html
-outputs/*.html
-outputs/*.json
+*.json
 
-# Keep the outputs directory
-!outputs/.gitkeep
+# Keep the images directory with screenshots
+!images/.gitkeep
+!images/*.png
+!images/*.jpg
+!images/*.jpeg
